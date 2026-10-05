@@ -1,0 +1,203 @@
+/* ==============================
+   ESTILOS GENERALES
+============================== */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #ffffff;
+}
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* ==============================
+   HEADER
+============================== */
+header {
+    background-color: #123c69;
+}
+.navbar {
+    padding: 15px 0;
+}
+.navbar-brand {
+    font-size: 24px;
+}
+.nav-link {
+    margin-left: 15px;
+}
+/* ==============================
+   HERO
+============================== */
+.hero {
+    background: linear-gradient(135deg, #dceeff, #ffffff);
+    padding: 90px 0;
+}
+.hero-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.hero h1 {
+    font-size: 50px;
+    color: #123c69;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+}
+.texto-pequeno {
+    font-weight: bold;
+    color: #2878bd;
+}
+.hero-icono {
+    font-size: 150px;
+}
+/* ==============================
+   SECCIONES
+============================== */
+.seccion {
+    padding: 70px 0;
+}
+.texto-centro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+/* ==============================
+   SERVICIOS - GRID
+============================== */
+.servicios {
+    background-color: #f4f8fc;
+}
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+.tarjeta {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+.tarjeta h3 {
+    color: #123c69;
+    margin: 15px 0;
+}
+.tarjeta p {
+    line-height: 1.6;
+}
+.icono {
+    font-size: 55px;
+}
+/* ==============================
+   BENEFICIOS - FLEXBOX
+============================== */
+.beneficios {
+    background-color: #eaf4ff;
+}
+.beneficios-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+.beneficio {
+    flex: 1;
+    text-align: center;
+    padding: 25px;
+}
+.beneficio span {
+    font-size: 45px;
+}
+.beneficio h3 {
+    color: #123c69;
+    margin: 15px 0;
+}
+/* ==============================
+   FORMULARIO
+============================== */
+.registro {
+    background-color: #f8f9fa;
+}
+.formulario {
+    max-width: 850px;
+    margin: 40px auto 0;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.boton-enviar {
+    width: 100%;
+    margin-top: 25px;
+}
+.mensaje {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* ==============================
+   FOOTER
+============================== */
+footer {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+footer p {
+    margin: 5px;
+}
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    .hero-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 38px;
+    }
+    .hero-icono {
+        font-size: 100px;
+    }
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+    .beneficios-grid {
+        flex-direction: column;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .seccion {
+        padding: 50px 20px;
+    }  
+}
